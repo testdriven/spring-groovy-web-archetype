@@ -13,7 +13,7 @@
 
 	<groupId>org.testdriven.archetypes</groupId>
 	<artifactId>spring-groovy-web-archetype</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>TestDriven.org :: Spring on Groovy web archetype</name>
