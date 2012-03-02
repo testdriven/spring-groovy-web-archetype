@@ -23,12 +23,6 @@
 				<include>**/*</include>
 			</includes>
 		</fileSet>
-		<fileSet encoding="UTF-8">
-			<directory>src/main/webapp</directory>
-			<includes>
-				<include>**/*</include>
-			</includes>
-		</fileSet>
 	</fileSets>
 
 </archetype-descriptor>
