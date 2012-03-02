@@ -5,7 +5,12 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.testdriven</groupId>
+	<parent>
+		<groupId>org.testdriven</groupId>
+		<artifactId>testdriven</artifactId>
+		<version>1</version>
+	</parent>
+
 	<artifactId>spring-groovy-web-archetype</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
