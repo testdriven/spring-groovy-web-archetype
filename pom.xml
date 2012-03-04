@@ -17,6 +17,60 @@
 	<packaging>maven-archetype</packaging>
 
 	<name>TestDriven.org :: Spring on Groovy web archetype</name>
+	<description>Archetype that combines a Spring, Spring MVC and Groovy into one working solution which allows to create arbitrary artifacts in both Groovy and Java.</description>
+
+	<url>http://www.testdriven.org/spring-groovy-web-archetype</url>
+
+	<scm>
+		<connection>scm:git:git://github.com/testdriven/spring-groovy-web-archetype</connection>
+		<developerConnection>scm:git:ssh://git@github.com/testdriven/spring-groovy-web-archetype</developerConnection>
+		<url>http://github.com/testdriven/spring-groovy-web-archetype</url>
+	</scm>
+
+	<distributionManagement>
+		<site>
+			<id>testdriven.org</id>
+			<url>scp://testdriven.org:9922/var/www/spring-groovy-web-archetype/</url>
+		</site>
+	</distributionManagement>
+
+	<organization>
+		<name>testdriven.org</name>
+		<url>http://github.com/testdriven</url>
+	</organization>	
+
+	<issueManagement>
+		<system>GitHub</system>
+    	<url>http://github.com/testdriven/spring-groovy-web-archetype/issues</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>padcom</id>
+			<name>Matthias Hryniszak</name>
+			<email>padcom@gmail.com</email>
+			<url>http://padcom13.blogspot.com</url>
+			<organization>testdriven.org</organization>
+			<organizationUrl>http://testdriven.org</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+2</timezone>
+			<properties>
+				<picUrl>http://en.gravatar.com/userimage/19573841/5adfa1da4f670fd5d349b790d13af250.png</picUrl>
+			</properties>
+		</developer>
+	</developers>
 
 	<build>
 		<extensions>
