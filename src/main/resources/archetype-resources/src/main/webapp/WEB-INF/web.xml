@@ -33,15 +33,25 @@
 
 	<!-- Example Spring servlet -->
 	<servlet>
-		<servlet-name>example</servlet-name>
+		<servlet-name>example-servlet</servlet-name>
 		<servlet-class>
 			org.springframework.web.context.support.HttpRequestHandlerServlet
 		</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>example</servlet-name>
+		<servlet-name>example-servlet</servlet-name>
 		<url-pattern>/example</url-pattern>
 	</servlet-mapping>
+
+	<!-- Example Spring filter -->
+	<filter>
+		<filter-name>example-filter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>example-filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
 	<!-- Spring MVC servlet -->
 	<servlet>
