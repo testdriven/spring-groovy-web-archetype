@@ -27,6 +27,23 @@
 	</servlet-mapping>
 
 	<!-- Spring MVC servlet -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Example Spring servlet -->
+	<servlet>
+		<servlet-name>example</servlet-name>
+		<servlet-class>
+			org.springframework.web.context.support.HttpRequestHandlerServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>example</servlet-name>
+		<url-pattern>/example</url-pattern>
+	</servlet-mapping>
+
+	<!-- Spring MVC servlet -->
 	<servlet>
 		<!-- Load spring configuration from <servlet-name>-servlet.xml -->
 		<servlet-name>spring</servlet-name>

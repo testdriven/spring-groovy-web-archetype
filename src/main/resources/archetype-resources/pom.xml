@@ -17,9 +17,13 @@
 		<groovy.version>1.8.6</groovy.version>
 		<slf4j.version>1.6.4</slf4j.version>
 		<javamelody.version>1.34.0</javamelody.version>
+		<servlet-api.version>2.5</servlet-api.version>
+		<jstl.version>1.2</jstl.version>
+		<inject.version>1</inject.version>
 	</properties>
 
 	<build>
+		<finalName>${artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -42,6 +46,13 @@
 						<version>1.8.6-01</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<configuration>
+					<path>/${artifactId}</path>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -71,18 +82,24 @@
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<version>${jstl.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
-			<version>1</version>
+			<version>${inject.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.6.4</version>
+			<version>${slf4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.bull.javamelody</groupId>

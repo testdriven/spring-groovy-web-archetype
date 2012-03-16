@@ -3,7 +3,6 @@
 #set( $symbol_escape = '\' )
 package ${package}
 
-import groovy.util.logging.Log4j;
 import groovy.util.logging.Slf4j;
 
 import org.springframework.stereotype.Controller
