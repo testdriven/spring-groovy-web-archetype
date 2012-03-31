@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.testdriven</groupId>
 		<artifactId>testdriven</artifactId>
-		<version>1</version>
+		<version>2</version>
 	</parent>
 
 	<groupId>org.testdriven.archetypes</groupId>
