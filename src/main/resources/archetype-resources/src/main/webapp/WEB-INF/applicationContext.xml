@@ -21,5 +21,13 @@
 	<bean id="example-filter" class="${package}.ExampleFilter">
 		<property name="name" value="Hello, world! from Spring filter"/>
 	</bean>
+
+	<bean id="web-resources-filter" class="ro.isdc.wro.http.ConfigurableWroFilter">
+		<property name="properties">
+			<bean id="wroProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">  
+    			<property name="location" value="classpath:wro.properties" />  
+			</bean>  
+		</property>
+	</bean>
 		
 </beans>

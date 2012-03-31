@@ -26,6 +26,20 @@
 		<url-pattern>/WEB-INF/views/*</url-pattern>
 	</servlet-mapping>
 
+	<!-- Resources (JavaScript and CSS) -->
+	<filter>
+		<filter-name>web-resources-filter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>web-resources-filter</filter-name>
+		<url-pattern>/resources/*</url-pattern>
+	</filter-mapping>
+
 	<!-- Spring MVC servlet -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
