@@ -92,7 +92,7 @@
 	<repositories>
 		<repository>
 			<id>testdriven-releases</id>
-			<url>http://nexus.testdriven.org/content/repositories/releases/</url>
+			<url>http:/testdriven.org/nexus/content/repositories/releases/</url>
 		</repository>
 	</repositories>
 </project>
