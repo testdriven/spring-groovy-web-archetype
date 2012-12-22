@@ -28,7 +28,7 @@
 	<distributionManagement>
 		<site>
 			<id>testdriven.org</id>
-			<url>scp://testdriven.org:9922/var/www/spring-groovy-web-archetype/</url>
+			<url>scp://testdriven.org:9922/srv/www/testdriven.org/html/spring-groovy-web-archetype/</url>
 		</site>
 	</distributionManagement>
 
